@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background-color: #00ff00;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: left;
+}
+
+.main-nav {
+  background-color: #a23a00;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 18px;
+  font-style: italic;
+  color: #ffeb00;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submenu-container {
+  position: relative;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ff6600;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  min-width: 200px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  background-color: #cc5200;
+}
+
+.submenu-container:hover .submenu {
+  display: block;
+}
+
+.arrow {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.submenu-container a {
+  display: flex;
+  align-items: center;
+}
+
+/* Galleri */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom */
+  gap: 16px; /* Jarak antar gambar */
+  padding: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.whatsapp-contact {
+  position: fixed; /* Mengapung di sudut layar */
+  bottom: 20px; /* Jarak dari bawah */
+  right: 20px; /* Jarak dari kanan */
+  background-color: #25d366; /* Warna latar belakang hijau WhatsApp */
+  color: white; /* Warna teks putih */
+  padding: 10px; /* Padding di sekitar teks */
+  border-radius: 5px; /* Sudut membulat */
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  align-items: center; /* Vertikal center */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Bayangan */
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.whatsapp-contact img {
+  width: 70px; /* Ukuran logo WhatsApp */
+  height: 70px; /* Ukuran logo WhatsApp */
+  margin-right: 10px; /* Jarak antara logo dan teks */
+}
+
+/* Gaya untuk memusatkan gambar menu */
+.menu-image {
+  display: flex; /* Menggunakan flexbox */
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal */
+  min-height: 30vh; /* Tinggi minimum area gambar */
+  width: 100%; /* Lebar penuh */
+  margin: 0; /* Menghilangkan margin */
+  padding: 20px; /* Padding untuk memberikan ruang di sekitar gambar */
+  box-sizing: border-box; /* Memastikan padding dihitung dalam lebar total */
+}
+
+.menu-image img {
+  max-width: 367px; /* Lebar maksimum gambar */
+  max-height: 367px; /* Tinggi maksimum gambar */
+  width: 100%; /* Lebar responsif */
+  height: auto; /* Tinggi otomatis untuk mempertahankan rasio aspek */
+  border-radius: 8px; /* Menambahkan sudut membulat pada gambar */
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di layar lebih kecil */
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom di layar lebih kecil */
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 kolom di layar sangat kecil */
+  }
+}
+
+/* Batas Galleri */

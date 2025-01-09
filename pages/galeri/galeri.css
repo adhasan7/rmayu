@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background-color: #00ff00;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: left;
+}
+
+.main-nav {
+  background-color: #a23a00;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 18px;
+  font-style: italic;
+  color: #ffeb00;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submenu-container {
+  position: relative;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ff6600;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  min-width: 200px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  background-color: #cc5200;
+}
+
+.submenu-container:hover .submenu {
+  display: block;
+}
+
+.arrow {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.submenu-container a {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Galleri */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom */
+  gap: 16px; /* Jarak antar gambar */
+  padding: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di layar lebih kecil */
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom di layar lebih kecil */
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 kolom di layar sangat kecil */
+  }
+}
+
+/* Batas Galleri */
