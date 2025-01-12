@@ -8,11 +8,11 @@ body {
 }
 
 /* .banner-bawah {
-    position: relative;
-    overflow: hidden; 
-    width: 100%;
-    height: 300px; 
-  } */
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  height: 300px; 
+} */
 
 .banner-bawah {
   position: relative;
@@ -23,16 +23,16 @@ body {
 }
 
 /* .carousel {
-    display: flex;
-    transition: transform 0.5s ease; 
-    width: 100%; 
-  }
-  
-  .carousel img {
-    width: 100%; 
-    height: 300px; 
-    object-fit: cover; 
-  } */
+  display: flex;
+  transition: transform 0.5s ease; 
+  width: 100%; 
+}
+
+.carousel img {
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover; 
+} */
 
 .carousel {
   display: flex; /* Menggunakan flexbox untuk mengatur gambar dalam satu baris */
@@ -160,16 +160,16 @@ body {
 }
 
 /* .kotak-besar {
-    background-color: #e02b20; 
-    width: 700px; 
-    height: 140px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    color: white; 
-    opacity: 0; 
-    transform: translateY(20px); 
-  } */
+  background-color: #e02b20; 
+  width: 700px; 
+  height: 140px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: white; 
+  opacity: 0; 
+  transform: translateY(20px); 
+} */
 
 .submenu-container {
   position: relative;
@@ -464,18 +464,18 @@ body {
   left: 0;
   display: none;
   /* min-width: 200px;
-    border-radius: 4px; */
+  border-radius: 4px; */
   z-index: 1;
   /******** tutup bag1 *******/
 
   /* position: absolute; */
   /* top: 100%;
-    left: 0;
-    display: none;
-    background-color: #ff6600;
-    border-radius: 4px;
-    z-index: 2;
-    padding: 10px 0; */
+  left: 0;
+  display: none;
+  background-color: #ff6600;
+  border-radius: 4px;
+  z-index: 2;
+  padding: 10px 0; */
 }
 
 .submenu a {
@@ -625,33 +625,6 @@ body {
   display: none; /* Sembunyikan ikon hamburger secara default */
 }
 
-.contact-section {
-  text-align: center; /* Memusatkan teks */
-  padding: 50px 20px; /* Padding atas dan bawah */
-  background-color: white; /* Warna latar belakang bagian kontak */
-  border: 1px solid #ccc; /* Garis batas */
-  border-radius: 8px; /* Sudut membulat */
-  max-width: 600px; /* Lebar maksimum */
-  margin: 50px auto; /* Memusatkan bagian kontak */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
-}
-
-.contact-section h1 {
-  font-size: 24px; /* Ukuran font untuk judul */
-  margin-bottom: 20px; /* Jarak bawah judul */
-  font-weight: bold; /* Menebalkan teks */
-}
-
-.contact-section p {
-  font-size: 16px; /* Ukuran font untuk paragraf */
-  margin-bottom: 10px; /* Jarak bawah paragraf */
-}
-
-.email {
-  font-weight: bold; /* Menebalkan teks email */
-  color: #007bff; /* Warna teks email */
-}
-
 .footer {
   background-color: #333; /* Warna latar belakang footer */
   color: white; /* Warna teks */
@@ -661,6 +634,7 @@ body {
   bottom: 0; /* Menempatkan footer di bagian bawah */
   width: 100%; /* Lebar penuh */
 }
+
 .container {
   max-width: 1200px; /* Lebar maksimum kontainer */
   margin: auto; /* Memusatkan kontainer */

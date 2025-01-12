@@ -1,12 +1,10 @@
-<!--  bedah -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="galeri.css" />
+    <link rel="stylesheet" href="home.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/app.css?v=1.0">
@@ -38,7 +36,7 @@
                 </div>
                 <!-- Menu 1 -->
                 <ul class="menu menu1">
-                    <li><a href="../home/home.html" class="active">HOME</a></li>
+                    <li><a href="#home" class="active">HOME</a></li>
                     <li class="submenu-container">
                         <a href="#">PROFIL Nila Dan Ayam Bakar Bu Ayu <span class="arrow">▼</span></a>
                         <ul class="submenu">
@@ -64,7 +62,7 @@
                             <input type="text" id="fname" name="fname" placeholder="Pilih Laman">
                         </form>
                     </div>
-                    <li><a href="../home/home.html" class="active">HOME</a></li>
+                    <li><a href="#home" class="active">HOME</a></li>
                     <li class="submenu-container">
                         <a href="#">PROFIL <span class="arrow">▼</span></a>
                         <ul class="submenu">
@@ -86,35 +84,61 @@
             </div>
         </nav>
 
-          
+          <div class="banner-bawah">  
+            <div class="kotak-besar">  
+                <div class="carousel" id="carousel">  
+                    <img src="./gambar/corosel/cor1.jpg" alt="Gambar 1" />  
+                    <img src="./gambar/corosel/cor2.jpg" alt="Gambar 2" />  
+                    <img src="./gambar/corosel/cor3.jpg" alt="Gambar 3" />  
+                    <img src="./gambar/corosel/cor4.jpg" alt="Gambar 4" />  
+                </div>  
+                
+            </div>  
+        </div>  
         
 
               <!-- <h2>Kuliner Ikan Nusantara</h2> -->
             </div>
           </div>
-          
+          <!-- Menampilkan gambar menu di tengah halaman -->
           <div class="kegiatan">
-            
-           
+            <div class="kegiatan-kontent">
+              <h2 class="text-sd"><marquee>Selamat Datang</marquee></h2>
 
-            
-        </div>
-        <div class="gallery">
-          <img src="../images/1.jpg" alt="Image 1" />
-          <img src="../images/2.jpg" alt="Image 2" />
-          <img src="../images/3.jpg" alt="Image 3" />
-          <img src="../images/4.jpg" alt="Image 4" />
-         
+              <h2 class="menu-image">KEGIATAN</h2>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <img src="./gambar/kegiatan1.jpg" alt="Kegiatan Reunian" />
+            <img src="./gambar/kegiatan2.jpg" alt="Kumpulan Keluarga" />
+            <img src="./gambar/kegiatan3.jpg" alt="Kumpulan Keluarga" />
+            <img src="./gambar/kegiatan4.jpg" alt="Acara Resepsi" />
+          </div>
+        </header>
+        <!-- Menambahkan nomor WhatsApp dan logo -->
+        <div class="whatsapp-contact">
+          <span>Hubungi:</span>
+          <!-- Menambahkan tulisan "Hubungi" -->
+          <a href="https://wa.me/6285226468123" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+              alt="WhatsApp Logo"
+              style="width: 30px; height: 30px; vertical-align: middle"
+            />
+            082138618848
+          </a>
         </div>
         <footer class="footer">  
           <div class="container">  
               <p>&copy; 2025 RM-Ibu Ayu. All rights reserved.</p>  
           </div>  
       </footer>  
-        <script src="galeri.js"></script>
+        <script src="home.js"></script>
       </body>
     </html>
   </body>
 </html>
+
 
 

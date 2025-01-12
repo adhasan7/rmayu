@@ -108,3 +108,16 @@ function toggleMenu() {
     submenu.style.display = "block";
   }
 }
+
+// function toggleMenu() {
+//   var submenu = document.querySelector(".submenu");
+//   if (submenu.style.display === "block") {
+//     submenu.style.display = "none";
+//   } else {
+//     submenu.style.display = "block";
+//   }
+// }
+// function toggleMenu() {
+//   var menu = document.querySelector(".menu");
+//   menu.classList.toggle("active"); // Menambahkan atau menghapus kelas 'active'
+// }
